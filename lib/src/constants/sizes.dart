@@ -1,2 +1,4 @@
-const DefaultSize = 30.0;
-const SplashContainerSize = 30.0;
+const tDefaultSize = 30.0;
+const tSplashContainerSize = 30.0;
+const tRoundedSize = 15.0;
+const tPrimaryFontSize = 16.0;
