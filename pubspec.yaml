@@ -65,7 +65,6 @@ flutter:
   assets:
     - assets/images/logo-white.png
     - assets/images/logo-name-blue.png
-    - assets/images/tip-icon.png
     - assets/images/step-one.png
     - assets/images/step-two.png
     - assets/images/step-tree.png
