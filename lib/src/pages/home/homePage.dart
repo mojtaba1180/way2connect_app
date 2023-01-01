@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:way2connect/src/constants/color.dart';
 import 'package:way2connect/src/global-components/pending-message/pending-message.dart';
-import 'package:way2connect/src/global-components/tab-bar/tab-bar.dart';
+import 'package:way2connect/src/pages/tickets/tickets.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -39,33 +38,7 @@ class _HomePageState extends State<HomePage> {
               margin: const EdgeInsets.only(top: 180),
               width: double.infinity,
               color: Colors.white,
-              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 30),
-              child: Column(
-                children: [
-                  Container(
-                    height: 40,
-                    decoration: BoxDecoration(
-                        color: tLightGray,
-                        borderRadius: BorderRadius.circular(10)),
-                    child: const TextField(
-                      decoration: InputDecoration(
-                        suffixIcon: Icon(
-                          Icons.search,
-                          size: 30,
-                          color: tDark,
-                        ),
-                        border: InputBorder.none,
-                        filled: true,
-                        hintText: "Search",
-                        fillColor: Colors.transparent,
-                      ),
-                    ),
-                  ),
-                  Expanded(
-                    child: StackOver(),
-                  ),
-                ],
-              )),
+              child: const Tickets()),
         ],
       ),
     );
