@@ -60,6 +60,17 @@ Widget _ListCard() {
               color: Colors.white,
             ),
           ),
+          Spacer(
+            flex: 2,
+          ),
+          Text(
+            "W18426448368484",
+            style: TextStyle(
+              fontSize: tPrimaryFontSize,
+              fontWeight: FontWeight.w500,
+              color: Colors.white,
+            ),
+          )
         ],
       ),
     ),
