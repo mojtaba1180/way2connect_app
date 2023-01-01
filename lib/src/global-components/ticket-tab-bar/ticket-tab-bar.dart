@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:way2connect/src/constants/color.dart';
+import 'package:way2connect/src/global-components/ticket-list-item/ticket-list-item.dart';
 
 class StackOver extends StatefulWidget {
   @override
@@ -27,12 +28,13 @@ class _StackOverState extends State<StackOver>
     return Scaffold(
       backgroundColor: Colors.white,
       body: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 10),
+        padding: const EdgeInsets.only(top: 10),
         child: Column(
           children: [
             // give the tab bar a height [can change hheight to preferred height]
             Container(
                 height: 40,
+                margin: const EdgeInsets.symmetric(horizontal: 20),
                 decoration: BoxDecoration(
                   color: tLightGray,
                   borderRadius: BorderRadius.circular(
@@ -87,22 +89,44 @@ class _StackOverState extends State<StackOver>
             Expanded(
               child: TabBarView(
                 controller: _tabController,
-                children: const [
+                children: [
                   // first tab bar view widget
-                  Center(
-                    child: Text(
-                      'All',
-                      style: TextStyle(
-                        fontSize: 25,
-                        fontWeight: FontWeight.w600,
-                      ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 10),
+                    child: ListView(
+                      children: [
+                        TicketListItem(),
+                        TicketListItem(),
+                        TicketListItem(),
+                        TicketListItem(),
+                        TicketListItem(),
+                        TicketListItem(),
+                        TicketListItem(),
+                        TicketListItem(),
+                        TicketListItem(),
+                        TicketListItem(),
+                        TicketListItem(),
+                        TicketListItem(),
+                        TicketListItem(),
+                        TicketListItem(),
+                        TicketListItem(),
+                      ],
                     ),
                   ),
+                  // Center(
+                  //   child: Text(
+                  //     'All',
+                  //     style: TextStyle(
+                  //       fontSize: 25,
+                  //       fontWeight: FontWeight.w600,
+                  //     ),
+                  //   ),
+                  // ),
 
                   // second tab bar view widget
-                  Center(
+                  const Center(
                     child: Text(
-                      'Main',
+                      'Mine',
                       style: TextStyle(
                         fontSize: 25,
                         fontWeight: FontWeight.w600,
