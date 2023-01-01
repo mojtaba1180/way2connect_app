@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:way2connect/src/constants/color.dart';
-import 'package:way2connect/src/global-components/tab-bar/tab-bar.dart';
+import 'package:way2connect/src/global-components/ticket-tab-bar/ticket-tab-bar.dart';
 
 class Tickets extends StatefulWidget {
   const Tickets({super.key});
@@ -35,28 +35,30 @@ class _TicketsState extends State<Tickets> {
           // ignore: prefer_const_constructors
           // ignore: unnecessary_const
           Container(
-              margin: const EdgeInsets.only(top: 0),
               width: double.infinity,
               color: Colors.white,
-              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 30),
+              padding: const EdgeInsets.only(top: 30),
               child: Column(
                 children: [
-                  Container(
-                    height: 40,
-                    decoration: BoxDecoration(
-                        color: tLightGray,
-                        borderRadius: BorderRadius.circular(10)),
-                    child: const TextField(
-                      decoration: InputDecoration(
-                        suffixIcon: Icon(
-                          Icons.search,
-                          size: 30,
-                          color: tDark,
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 20),
+                    child: Container(
+                      height: 40,
+                      decoration: BoxDecoration(
+                          color: tLightGray,
+                          borderRadius: BorderRadius.circular(10)),
+                      child: const TextField(
+                        decoration: InputDecoration(
+                          suffixIcon: Icon(
+                            Icons.search,
+                            size: 30,
+                            color: tDark,
+                          ),
+                          border: InputBorder.none,
+                          filled: true,
+                          hintText: "Search",
+                          fillColor: Colors.transparent,
                         ),
-                        border: InputBorder.none,
-                        filled: true,
-                        hintText: "Search",
-                        fillColor: Colors.transparent,
                       ),
                     ),
                   ),
