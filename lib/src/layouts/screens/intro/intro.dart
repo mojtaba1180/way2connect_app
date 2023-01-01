@@ -148,6 +148,7 @@ class _IntroState extends State<Intro> {
               ),
               ElevatedButton(
                   style: ElevatedButton.styleFrom(
+                    backgroundColor: tPrimaryColor,
                     shadowColor: Colors.transparent,
                     padding: const EdgeInsets.only(right: 35, left: 25),
                     alignment: Alignment.center,
