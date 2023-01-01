@@ -7,7 +7,7 @@ import 'package:way2connect/src/constants/sizes.dart';
 import 'package:way2connect/src/constants/text_strings.dart';
 import 'package:way2connect/src/controller/splash_screen_controller/splash_screen_controller.dart';
 
-import '../../../components/icon-with-text/icon-with-text.dart';
+import '../../../global-components/icon-with-text/icon-with-text.dart';
 
 class SplashScreen extends StatelessWidget {
   SplashScreen({Key? key}) : super(key: key);

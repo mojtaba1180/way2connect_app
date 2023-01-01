@@ -10,3 +10,7 @@ const String StepOneImage = "assets/images/step-one.png";
 const String StepTwoImage = "assets/images/step-two.png";
 const String StepTreeImage = "assets/images/step-tree.png";
 const String StepFourImage = "assets/images/step-four.png";
+
+// navbar
+
+const String ProfileTextImage = "assets/images/profile-text.png";

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:way2connect/src/components/button_global/button_global.dart';
-import 'package:way2connect/src/components/icon-with-text/icon-with-text.dart';
 import 'package:way2connect/src/constants/app_icon_icons.dart';
 import 'package:way2connect/src/constants/color.dart';
 import 'package:way2connect/src/constants/sizes.dart';
 import 'package:way2connect/src/constants/text_strings.dart';
+import 'package:way2connect/src/global-components/button_global/button_global.dart';
+import 'package:way2connect/src/global-components/icon-with-text/icon-with-text.dart';
 
 class LoginForm extends StatefulWidget {
   const LoginForm({super.key});

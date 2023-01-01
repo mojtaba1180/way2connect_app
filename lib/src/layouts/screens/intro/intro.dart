@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:way2connect/src/components/icon-with-text/icon-with-text.dart';
 import 'package:way2connect/src/constants/app_icon_icons.dart';
 import 'package:way2connect/src/constants/color.dart';
 import 'package:way2connect/src/constants/images.dart';
 import 'package:way2connect/src/constants/text_strings.dart';
-import 'package:way2connect/src/pages/homePage/homePage.dart';
+import 'package:way2connect/src/global-components/icon-with-text/icon-with-text.dart';
+import 'package:way2connect/src/pages/home/home.dart';
 
 class Intro extends StatefulWidget {
   const Intro({super.key});
@@ -32,7 +32,7 @@ class _IntroState extends State<Intro> {
   }
 
   void handleNextPage() {
-    Get.off(() => const HomePage());
+    Get.off(() => const Home());
   }
 
   @override
