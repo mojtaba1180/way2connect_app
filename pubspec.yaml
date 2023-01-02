@@ -42,7 +42,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_launcher_icons: ^0.8.0
+  flutter_launcher_icons: ^0.11.0
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
   # activated in the `analysis_options.yaml` file located at the root of your
@@ -64,6 +64,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/logo-white.png
+    - assets/images/logo-blue.png
     - assets/images/logo-name-blue.png
     - assets/images/step-one.png
     - assets/images/step-two.png
@@ -76,6 +77,7 @@ flutter:
         - asset: assets/fonts/icon/AppIcon.ttf
 
 flutter_icons:
-  android: luncher_icon
   ios: true
-  image_path: assets/images/logo-white.png
+  android: true
+  image_path_android: assets/images/logo-blue.png
+  image_path: assets/images/logo-blue.png
